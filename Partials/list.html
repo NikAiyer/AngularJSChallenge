@@ -1,0 +1,52 @@
+<div class ="box-table">
+	<h1 class ="description" > List of Items</h1>
+	<div class = "heading">
+		<label>Any:<input type = "text" data-ng-model="filter.$" /></label>
+		<label>Item:<input type = "text" data-ng-model="filter.title" /></label>
+		<label>Price:<input type = "text" data-ng-model="filter.price" /></label>
+		<label>Username:<input type = "text" data-ng-model="filter.user.username" /></label>
+		<label>First Name:<input type = "text" data-ng-model="filter.user.firstName" /></label>
+		<label>Last Name:<input type = "text" data-ng-model="filter.user.lastName" /></label>
+		<label>Email:<input type = "text" data-ng-model="filter.user.email" /></label>
+
+		<select data-ng-model="filter.title" data-ng-options="listing.price for listing in myData.listings"></select>
+		<select >
+   			<option data-ng-model="filter.$">Any</option>
+			<option data-ng-model="filter.title"> Item </option>
+			<option data-ng-model="filter.price" /> Price </option>
+			<option data-ng-model="filter.user.username" /> Username </option>
+			<option data-ng-model="filter.user.firstName" /> FirstName </option>
+			<option data-ng-model="filter.user.lastName"> LastName </option>
+			<option data-ng-model="filter.user.email"> Email </option>
+		</select>
+
+		<input name="TypeCode" type="text" ng-model="sample"/>
+
+
+
+	</div>
+	<br />
+	<table>
+		<thead>
+			<tr>
+				<th>Photo</th>
+				<th>Title</th>
+				<th>Price</th>
+				<th>Name</th>
+				<th>UserName</th>
+				<th>Email</th>
+			</tr>
+		</thead>
+		<tbody data-ng-repeat="listing in myData">
+        	<tr data-ng-repeat="data in listing | filter: filter:strict">
+       				<td><img class = "img user-tumb" src="{{data.user.photos[0].url}}" /></td>
+       				<td>{{data.title}}</td>
+       				<td>{{data.price | currency : $ : 2}}</td>
+       				<td>{{data.user.firstName}} {{data.user.lastName}}</td>
+       				<td>{{data.user.username}}</td>
+       				<td>{{data.user.email}}</td>
+       		</tr>
+		</tbody>
+	</table>
+
+</div>
