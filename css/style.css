@@ -1,0 +1,52 @@
+
+#title {
+    color: navy;
+    text-align: center;
+}
+#inputName {
+    text-align: center;
+}
+
+.heading {
+    text-align:center; 
+    color: white;
+}
+
+.input {
+    border: 2px solid #23455c;
+    border-radius: 4px;
+
+}
+.table { 
+    width: 100%; 
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+
+ul {
+    float: left;
+}
+
+.hidden {
+    display: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+background-color:#23455c;
+}

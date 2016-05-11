@@ -1,0 +1,74 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'angular-bootstrap-lightbox--save' ]
+2 info using npm@1.4.16
+3 info using node@v0.10.29
+4 verbose node symlink /usr/local/bin/node
+5 verbose cache add [ 'angular-bootstrap-lightbox--save', null ]
+6 verbose cache add name=undefined spec="angular-bootstrap-lightbox--save" args=["angular-bootstrap-lightbox--save",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'angular-bootstrap-lightbox--save',
+7 verbose parsed url   path: 'angular-bootstrap-lightbox--save',
+7 verbose parsed url   href: 'angular-bootstrap-lightbox--save' }
+8 silly lockFile 643c196b-angular-bootstrap-lightbox-save angular-bootstrap-lightbox--save
+9 verbose lock angular-bootstrap-lightbox--save /Users/nsaiyer/.npm/643c196b-angular-bootstrap-lightbox-save.lock
+10 silly lockFile 643c196b-angular-bootstrap-lightbox-save angular-bootstrap-lightbox--save
+11 silly lockFile 643c196b-angular-bootstrap-lightbox-save angular-bootstrap-lightbox--save
+12 verbose addNamed [ 'angular-bootstrap-lightbox--save', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile e90d395e-angular-bootstrap-lightbox-save angular-bootstrap-lightbox--save@
+15 verbose lock angular-bootstrap-lightbox--save@ /Users/nsaiyer/.npm/e90d395e-angular-bootstrap-lightbox-save.lock
+16 silly addNameRange { name: 'angular-bootstrap-lightbox--save',
+16 silly addNameRange   range: '*',
+16 silly addNameRange   hasData: false }
+17 verbose request where is /angular-bootstrap-lightbox--save
+18 verbose request registry https://registry.npmjs.org/
+19 verbose request id 7368190a6d75b40e
+20 verbose url raw /angular-bootstrap-lightbox--save
+21 verbose url resolving [ 'https://registry.npmjs.org/',
+21 verbose url resolving   './angular-bootstrap-lightbox--save' ]
+22 verbose url resolved https://registry.npmjs.org/angular-bootstrap-lightbox--save
+23 verbose request where is https://registry.npmjs.org/angular-bootstrap-lightbox--save
+24 info trying registry request attempt 1 at 01:33:24
+25 http GET https://registry.npmjs.org/angular-bootstrap-lightbox--save
+26 http 404 https://registry.npmjs.org/angular-bootstrap-lightbox--save
+27 silly registry.get cb [ 404,
+27 silly registry.get   { 'content-type': 'application/json',
+27 silly registry.get     'cache-control': 'max-age=0',
+27 silly registry.get     'content-length': '2',
+27 silly registry.get     'accept-ranges': 'bytes',
+27 silly registry.get     date: 'Wed, 11 May 2016 08:33:25 GMT',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     age: '0',
+27 silly registry.get     connection: 'keep-alive',
+27 silly registry.get     'x-served-by': 'cache-sjc3120-SJC',
+27 silly registry.get     'x-cache': 'MISS',
+27 silly registry.get     'x-cache-hits': '0',
+27 silly registry.get     'x-timer': 'S1462955605.110689,VS0,VE87',
+27 silly registry.get     vary: 'Accept-Encoding' } ]
+28 silly lockFile e90d395e-angular-bootstrap-lightbox-save angular-bootstrap-lightbox--save@
+29 silly lockFile e90d395e-angular-bootstrap-lightbox-save angular-bootstrap-lightbox--save@
+30 error 404 Not Found
+30 error 404
+30 error 404 'angular-bootstrap-lightbox--save' is not in the npm registry.
+30 error 404 You should bug the author to publish it
+30 error 404
+30 error 404 Note that you can also install from a
+30 error 404 tarball, folder, or http url, or git url.
+31 error System Darwin 15.2.0
+32 error command "node" "/usr/local/bin/npm" "install" "angular-bootstrap-lightbox--save"
+33 error cwd /Users/nsaiyer/Documents/Projects/AngularJS
+34 error node -v v0.10.29
+35 error npm -v 1.4.16
+36 error code E404
+37 verbose exit [ 1, true ]
