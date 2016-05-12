@@ -31,42 +31,20 @@
     		return lowerStr.indexOf(expected.toLowerCase()) === 0;
   		}
 
-		$http.get('listingsDataBlob.json').success(function(data){
-			$scope.myData = data;
-		})
+		$http.get('listingsDataBlob.json')
+			.success(function(data){
+				$scope.valid = true;
+				$scope.myData = data;
+			})
+			.error(function(data){
+				$scope.valid = false;
+			})
+
+		$scope.inside = "Inside Controller"
 
 		
 
 	}]);
 
-	myApp.filter('myfilter', function() {
-   
-   		function strStartsWith(str, prefix) {
-    		return (str+"").indexOf(prefix) === 0;
-   		}
-   
-   
-   		return function( items, amount) {
-    
-    		var filtered = [];
-    
-    		angular.forEach(items, function(item) {
-      			if(strStartsWith(item.amount, amount)){
-        			filtered.push(item);
-      			}
-    		});
-  
-    		return filtered;
-  		};
-	});
-
-	myApp.filter('startsWith', function() {
-    return function(items, prefix, itemProperty) {
-      return items.filter(function(item) {
-        var findIn = itemProperty ? item[itemProperty] : item;
-        return findIn.toString().indexOf(prefix) === 0;
-      });
-    };
-  })
 
 
